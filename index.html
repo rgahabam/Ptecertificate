@@ -460,75 +460,83 @@
             </div>
             <!-- Info Map Boxes Ends -->
         </section>
-        <!-- Contact Section Ends -->
-        <!-- Contact Form Section Starts -->
-        <section class="contactform">
-            <div class="section-overlay">
-                <div class="container">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1><span>Send Us</span> an email</h1>
-                        <h4>We are very responsive to messages</h4>
+        <!-- Contact Section Ends -->  <!-- Contact Form Section Starts -->
+<section class="contactform">
+    <div class="section-overlay">
+        <div class="container">
+            <!-- Main Heading Starts -->
+            <div class="text-center top-text">
+                <h1><span>Send Us</span> an email</h1>
+                <h4>We are very responsive to messages</h4>
+            </div>
+            <!-- Main Heading Ends -->
+            <div class="form-container">
+                <!-- Contact Form Starts -->
+                <form class="formcontact" action="https://formspree.io/f/mdkoodjv" method="POST" id="contactForm">
+                    <div class="row form-inputs">
+                        <!-- First Name Field Starts -->
+                        <div class="col-md-6 form-group custom-form-group">
+                            <span class="input custom-input">
+                                <input placeholder="First Name" class="input-field custom-input-field" id="firstname" name="firstname" type="text" required="" data-error="NEW ERROR MESSAGE">
+                                <label class="input-label custom-input-label">
+                                    <i class="fa fa-user icon icon-field"></i>
+                                </label>
+                            </span>
+                        </div>
+                        <!-- First Name Field Ends -->
+
+                        <!-- Last Name Field Starts -->
+                        <div class="col-md-6 form-group custom-form-group">
+                            <span class="input custom-input">
+                                <input placeholder="Last Name" class="input-field custom-input-field" id="lastname" name="lastname" type="text" required="">
+                                <label class="input-label custom-input-label">
+                                    <i class="fa fa-user-o icon icon-field"></i>
+                                </label>
+                            </span>
+                        </div>
+                        <!-- Last Name Field Ends -->
+
+                        <!-- Email Name Field Starts -->
+                        <div class="col-md-6 form-group custom-form-group">
+                            <span class="input custom-input">
+                                <input placeholder="Email" class="input-field custom-input-field" id="email" name="email" type="text" required="">
+                                <label class="input-label custom-input-label">
+                                    <i class="fa fa-envelope icon icon-field"></i>
+                                </label>
+                            </span>
+                        </div>
+                        <!-- Email Name Field Ends -->
+
+                        <!-- Message Field Starts -->
+                        <div class="form-group custom-form-group col-md-12">
+                            <textarea placeholder="Message" id="message" name="message" cols="45" rows="7" required=""></textarea>
+                        </div>
+                        <!-- Message Field Ends -->
+
+                        <!-- Submit Button Starts -->
+                        <div class="col-md-6 submit-form">
+                            <button id="form-submit" name="submit" type="submit" class="custom-button" title="Send">Send Message</button>
+                        </div>
+                        <!-- Submit Button Ends -->
+
+                        <!-- Form Submit Message Starts -->
+                        <div class="col-sm-12 text-center output_message_holder d-none">
+                            <p class="output_message"></p>
+                        </div>
+                        <!-- Form Submit Message Ends -->
                     </div>
-                    <!-- Main Heading Ends -->
-                    <div class="form-container">
-                        <!-- Contact Form Starts -->
-                        <form class="formcontact" action="https://formspree.io/f/mdkoodjv"
-                        method="POST">
-                            <div class="row form-inputs">
-                                <!-- First Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="First Name" class="input-field custom-input-field" id="firstname" name="firstname" type="text" required="" data-error="NEW ERROR MESSAGE">
-										<label class="input-label custom-input-label">
-											<i class="fa fa-user icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- First Name Field Ends -->
-                                <!-- Last Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="Last Name" class="input-field custom-input-field" id="lastname" name="lastname" type="text" required="">
-										<label class="input-label custom-input-label">
-											<i class="fa fa-user-o icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- Last Name Field Ends -->
-                                <!-- Message Field Starts -->
-                                <div class="form-group custom-form-group col-md-12">
-                                    <textarea placeholder="Message" id="message" name="message" cols="45" rows="7" required=""></textarea>
-                                </div>
-                                <!-- Message Field Ends -->
-                                <!-- Email Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="Email" class="input-field custom-input-field" id="email" name="email" type="text" required="">
-										<label class="input-label custom-input-label">
-											<i class="fa fa-envelope icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- Email Name Field Ends -->
-                                <!-- Submit Button Starts -->
-                                <div class="col-md-6 submit-form">
-                                    <button id="form-submit" name="submit" type="submit" class="custom-button" title="Send">Send Message</button>
-                                </div>
-                                <!-- Submit Button Ends -->
-                                <!-- Form Submit Message Starts -->
-                                <div class="col-sm-12 text-center output_message_holder d-none">
-                                    <p class="output_message"></p>
-                                </div>
-                                <!-- Form Submit Message Ends -->
-                            </div>
-                        </form>
-                        <!-- Contact Form Ends -->
-                    </div>
+                </form>
+                <!-- Contact Form Ends -->
+
+                <!-- Thank You Message -->
+                <div id="thankYouMessage" class="text-center" style="display: none;">
+                    <h4>Thank you for reaching out! We will get back to you shortly.</h4>
                 </div>
             </div>
-        </section>
-        <!-- Contact Form Section Ends --> 
+        </div>
+    </div>
+</section>
+<!-- Contact Form Section Ends -->
         <!-- Footer Section Starts -->
         <footer class="footer text-center">
             <!-- Container Starts -->
@@ -716,6 +724,38 @@
         })(jQuery);
     </script>
     <!-- Revolution Slider Initialization Ends -->
+    <script>
+        // Handle form submission
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            var form = event.target;
+    
+            // Send form data via POST
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(function(response) {
+                if (response.ok) {
+                    form.style.display = "none"; // Hide form
+                    document.getElementById("thankYouMessage").style.display = "block"; // Show thank you message
+                } else {
+                    response.json().then(function(data) {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(function(error) { return error["message"]; }).join(", "));
+                        } else {
+                            alert("Oops! There was a problem submitting your form.");
+                        }
+                    });
+                }
+            }).catch(function(error) {
+                alert("Oops! There was a problem submitting your form.");
+            });
+        });
+    </script>
 </body>
 
 </html>
